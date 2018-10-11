@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TK's Home</title>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+	<link href="static/css/bootstrap.min.css.map">
+	<link href="static/css/styles.css" rel="stylesheet">
+	<link href="static/css/font-awesome.min.css" rel="stylesheet">
+	<link href="static/css/animate.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<!--NAVBAR-->
+	<nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand">TK's <b>Music Collection</b></a>
+			</div>
+			<div class="collapse navbar-collapse navbar-right">
+				<ul class="nav navbar-nav">
+					<li class="scroll active"><a href="home">Home</a></li>
+					<li class="scroll"><a href="music_singer">Musics</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--NAVBAR-->
+
+	<!--Welcome-->
+	<section id="hero-text" class="wow fadeIn align-center">
+		<div class="container">`
+			<div class="row">
+				<div class="col-sm-12">
+					<h2 class="section-title text-center wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">Welcome to TK's HOME</h2>
+					<p class="text-center wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+						<br><br>The web is used to show TK's music collection.
+						<br><br>And TK has chosen some singers he likes for you -- In TK's 'MUSICS', you can enjoy it.
+						<br><br>And you can contact him in following ways.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Welcome-->
+
+	<!--Contact Me-->
+	<!--.fa{font-size: inherit}变为.fa{font-size: x-large}-->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<ul class="social-icons  wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+					<li><a class="col-md-6" href="#"><i class="fa fa-qq"></i></a></li>
+					<li><a class="col-md-6" href="#"><i class="fa fa-weixin"></i></a></li>
+					<li><a class="col-md-6" href="https://weibo.com/5679965401"><i class="fa fa-weibo"></i></a></li>
+					<li><a class="col-md-6" href="https://www.facebook.com/xinhao.li.9655"><i class="fa fa-facebook"></i></a></li>
+					<li><a class="col-md-6" href="https://github.com/LXH-TK"><i class="fa fa-github"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!--Contact Me-->
+
+	<!--BONUS-->
+	<div class="bonus wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+		<!--从本地上传文件-->
+		<input class="bonus_input" type="file" id="file_input" onchange='readPic(this)'/>
+		<br><br>
+		<!--本地图像预览-->
+		<img src="" alt="" id="selected" class="bonus_crop_img">
+		<!--通过修改后缀名实现格式转换-->
+		<a class="bonus_download" href="javascript:void()" download="convert.png" id="pic_download">点此下载</a>
+	</div>
+	<!--BONUS-->
+
+	<!--所需要的js文件-->
+	<script src="static/js/convert.js"></script>
+</body>
+</html>

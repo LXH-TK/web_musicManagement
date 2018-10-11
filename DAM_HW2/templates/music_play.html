@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../static/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../static/css/styles.css" rel="stylesheet">
+	<link href="../../static/css/music.css" rel="stylesheet">
+	<link href="../../static/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../../static/css/animate.min.css" rel="stylesheet">
+    <title>TK's Music - {{ name }}</title>
+</head>
+
+<body onload="enter({{singer_id}})">
+    <!--NAVBAR-->
+	<nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand">TK's <b>Music Collection</b></a>
+			</div>
+			<div class="collapse navbar-collapse navbar-right">
+				<ul class="nav navbar-nav">
+					<li class="scroll"><a href="../../home">Home</a></li>
+					<li class="scroll active"><a href="../../music_singer">Musics</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--NAVBAR-->
+
+	<!--CONTAINER-->
+	<div class="container">
+		<!--单曲展示-->
+		<div id="carousel-testimonial" class="carousel slide text-center" data-interval="false">
+
+			<br><br><br>
+			<div class="section-header wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+				<h2 class="section-title text-center">{{name}}</h2>
+				<p class="text-center">LAST and NEXT to slide between musics. If you play another music,<br>the last one will stop automatically.</p>
+			</div><!--歌手-->
+
+			<br>
+			<!--控制-->
+			<div class="editContent">
+				<ul class="my_filter">
+					<li class="active wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+						<a href="#carousel-testimonial" role="button" data-slide="prev">
+							<span class="fa fa-angle-left" aria-hidden="true"></span>  Last Song</a></li>
+					<li class="wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+						<a href="#carousel-testimonial" role="button" data-slide="next">Next Song
+							<span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+				</ul>
+			</div>
+			<!--控制-->
+
+			<!--歌曲-->
+			<div class="carousel-inner" role="listbox" data-interval="false">
+				<!--1-->
+				<div class="item active">
+					<div class="col-sm-6 wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+					  <img id="img1" class="img-responsive crop_img" src="">
+					</div><!--图片-->
+					<div class="col-sm-6 wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+						<h3 id="title1" class="column-title">s</h3>
+						<audio id="au1" src="" controls="controls" onclick="stopMusic(1)"></audio>
+						<p id="txt1" class="my_p"></p>
+					</div><!--歌名歌词-->
+				</div>
+				<!--2-->
+				<div class="item">
+					<div class="col-sm-6">
+					  <img id="img2" class="img-responsive crop_img" src="">
+					</div><!--图片-->
+					<div class="col-sm-6">
+						<h3 id="title2" class="column-title"></h3>
+						<audio id="au2" src="" controls="controls" onclick="stopMusic(2)"></audio>
+						<p id="txt2" class="my_p"></p>
+					</div><!--歌名歌词-->
+				</div>
+				<!--3-->
+				<div class="item">
+					<div class="col-sm-6">
+					  <img id="img3" class="img-responsive crop_img" src="">
+					</div><!--图片-->
+					<div class="col-sm-6">
+						<h3 id="title3" class="column-title"></h3>
+						<audio id="au3" src="" controls="controls" onclick="stopMusic(3)"></audio>
+						<p id="txt3" class="my_p"></p>
+					</div><!--歌名歌词-->
+				</div>
+				<!--4-->
+				<div class="item">
+					<div class="col-sm-6">
+					  <img id="img4" class="img-responsive crop_img" src="">
+					</div><!--图片-->
+					<div class="col-sm-6">
+						<h3 id="title4"  class="column-title"></h3>
+						<audio id="au4" src="" controls="controls" onclick="stopMusic(4)"></audio>
+						<p id="txt4" class="my_p"></p>
+					</div><!--歌名歌词-->
+				</div>
+				<!--5-->
+				<div class="item">
+					<div class="col-sm-6">
+					  <img id="img5" class="img-responsive crop_img" src="">
+					</div><!--图片-->
+					<div class="col-sm-6">
+						<h3 id="title5" class="column-title"></h3>
+						<audio id="au5" src="" controls="controls" onclick="stopMusic(5)"></audio>
+						<p id="txt5" class="my_p"></p>
+					</div><!--歌名歌词-->
+				</div>
+				<!--6-->
+				<div class="item">
+					<div class="col-sm-6">
+					  <img id="img6" class="img-responsive crop_img" src="">
+					</div><!--图片-->
+					<div class="col-sm-6">
+						<h3 id="title6" class="column-title"></h3>
+						<audio id="au6" src="" controls="controls" onclick="stopMusic(6)"></audio>
+						<p id="txt6" class="my_p"></p>
+					</div><!--歌名歌词-->
+				</div>
+				<!--7-->
+				<div class="item">
+					<div class="col-sm-6">
+					  <img id="img7" class="img-responsive crop_img" src="">
+					</div><!--图片-->
+					<div class="col-sm-6">
+						<h3 id="title7" class="column-title"></h3>
+						<audio id="au7" src="" controls="controls" onclick="stopMusic(7)"></audio>
+						<p id="txt7" class="my_p"></p>
+					</div><!--歌名歌词-->
+				</div>
+				<!--8-->
+				<div class="item">
+					<div class="col-sm-6">
+					  <img id="img8" class="img-responsive crop_img" src="">
+					</div><!--图片-->
+					<div class="col-sm-6">
+						<h3 id="title8" class="column-title"></h3>
+						<audio id="au8" src="" controls="controls" onclick="stopMusic(8)"></audio>
+						<p id="txt8" class="my_p"></p>
+					</div><!--歌名歌词-->
+				</div>
+				<!--9-->
+				<div class="item">
+					<div class="col-sm-6">
+					  <img id="img9" class="img-responsive crop_img" src="">
+					</div><!--图片-->
+					<div class="col-sm-6">
+						<h3 id="title9" class="column-title"></h3>
+						<audio id="au9" src="" controls="controls" onclick="stopMusic(9)"></audio>
+						<p id="txt9" class="my_p"></p>
+					</div><!--歌名歌词-->
+				</div>
+				<!--10-->
+				<div class="item">
+					<div class="col-sm-6">
+					  <img id="img10" class="img-responsive crop_img" src="">
+					</div><!--图片-->
+					<div class="col-sm-6">
+						<h3 id="title10" class="column-title"></h3>
+						<audio id="au10" src="" controls="controls" onclick="stopMusic(10)"></audio>
+						<p id="txt10" class="my_p"></p>
+					</div><!--歌名歌词-->
+				</div>
+			</div>
+			<!--歌曲-->
+
+		</div>
+		<!--单曲展示-->
+	</div>
+	<!--CONTAINER-->
+
+	<!--所需要的js文件-->
+	<script src="../../static/js/jquery.js"></script>
+	<script src="../../static/js/bootstrap.min.js"></script>
+	<script src="../../static/js/playMusic.js"></script>
+</body>
+</html>

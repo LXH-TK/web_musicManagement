@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+	<link href="static/css/styles.css" rel="stylesheet">
+	<link href="static/css/music.css" rel="stylesheet">
+	<link href="static/css/font-awesome.min.css" rel="stylesheet">
+	<link href="static/css/animate.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>TK's Music</title>
+</head>
+
+<body>
+	<!--NAVBAR-->
+	<nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand">TK's <b>Music Collection</b></a>
+			</div>
+			<div class="collapse navbar-collapse navbar-right">
+				<ul class="nav navbar-nav">
+					<li class="scroll"><a href="home">Home</a></li>
+					<li class="scroll active"><a href="music_singer">Musics</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--NAVBAR-->
+
+	<!--CONTAINER-->
+	<div class="container">
+		<div class="section-header">
+			<br>  <br>
+			<h2 class="section-title text-center wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">COLLECTIONS</h2>
+			<p class="text-center wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">From Pandora‘s Box,<br>Music Awakes Our Hearing.</p>
+		</div>
+
+		<!--滑动歌手页面布局-->
+		<div id="carousel-testimonial" class="carousel slide text-center" data-interval="false" data-wrap="false">
+			<!--控制-->
+			<div class="editContent">
+				<ul class="filter">
+					<li class="active wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+						<a href="#carousel-testimonial" role="button" data-slide="prev">Male Singer</a></li>
+					<li class="wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+						<a href="#carousel-testimonial" role="button" data-slide="next">Female Singer</a></li>
+				</ul>
+			</div>
+			<!--控制-->
+
+			<!--歌手信息-->
+			<div class="carousel-inner wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;" role="listbox">
+				<!--男歌手-->
+				<div class="item active">
+					<div class="col-md-4 gallery-item-wrapper artwork creative">
+						<div class="gallery-item">
+							<div class="gallery-thumb">
+								<img src="static/images/singer_images/许嵩.jpg" class="img-responsive" alt="1st gallery Thumb">
+								<div class="image-overlay"></div>
+								<a href="music_play/许嵩/1" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+								<a href="https://weibo.com/vae" class="gallery-link"><i class="fa fa-link"></i></a>
+							</div>
+						</div>
+						<div class="gallery-details">
+							<div id="name" class="editContent">
+								<h5>许嵩</h5>
+							</div>
+							<div class="editContent">
+								<p>因你而起的一泓喜悲 权当年轻做个纪念</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-item-wrapper nature outside">
+						<div class="gallery-item">
+							<div class="gallery-thumb">
+								<img src="static/images/singer_images/陈奕迅.jpg" class="img-responsive" alt="2nd gallery Thumb">
+								<div class="image-overlay"></div>
+								<a href="music_play/陈奕迅/11" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+								<a href="https://weibo.com/easonchanyickshun" class="gallery-link"><i class="fa fa-link"></i></a>
+							</div>
+						</div>
+						<div class="gallery-details">
+							<div class="editContent">
+								<h5>陈奕迅</h5>
+							</div>
+							<div class="editContent">
+								<p>灵魂若变卖了 上链也没心跳</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-item-wrapper photography artwork">
+						<div class="gallery-item">
+							<div class="gallery-thumb">
+								<img src="static/images/singer_images/林俊杰.jpg" class="img-responsive" alt="3rd gallery Thumb">
+								<div class="image-overlay"></div>
+								<a href="music_play/林俊杰/21" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+								<a href="https://weibo.com/jjlin" class="gallery-link"><i class="fa fa-link"></i></a>
+							</div>
+						</div>
+						<div class="gallery-details">
+							<div class="editContent">
+								<h5>林俊杰</h5>
+							</div>
+							<div class="editContent">
+								<p>May your light shine through</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 gallery-item-wrapper creative nature">
+						<div class="gallery-item">
+							<div class="gallery-thumb">
+								<img src="static/images/singer_images/华晨宇.jpg" class="img-responsive" alt="4th gallery Thumb">
+								<div class="image-overlay"></div>
+								<a href="music_play/华晨宇/31" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+								<a href="https://weibo.com/u/1624923463" class="gallery-link"><i class="fa fa-link"></i></a>
+							</div>
+						</div>
+						<div class="gallery-details">
+							<div class="editContent">
+								<h5>华晨宇</h5>
+							</div>
+							<div class="editContent">
+								<p>回忆里的我比国王富有</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 gallery-item-wrapper nature">
+						<div class="gallery-item">
+							<div class="gallery-thumb">
+								<img src="static/images/singer_images/陈鸿宇.jpg" class="img-responsive" alt="5th gallery Thumb">
+								<div class="image-overlay"></div>
+								<a href="music_play/陈鸿宇/41" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+								<a href="https://weibo.com/hongyumao" class="gallery-link"><i class="fa fa-link"></i></a>
+							</div>
+						</div>
+						<div class="gallery-details">
+							<div class="editContent">
+								<h5>陈鸿宇</h5>
+							</div>
+							<div class="editContent">
+								<p>梦倒塌的地方 今已爬满青苔</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--男歌手-->
+				<!--女歌手-->
+				<div class="item">
+					<div class="col-md-4 gallery-item-wrapper artwork creative">
+						<div class="gallery-item">
+							<div class="gallery-thumb">
+								<img src="static/images/singer_images/王菲.jpg" class="img-responsive" alt="1st gallery Thumb">
+								<div class="image-overlay"></div>
+								<a href="music_play/王菲/51" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+								<a href="https://weibo.com/1629810574" class="gallery-link"><i class="fa fa-link"></i></a>
+							</div>
+						</div>
+						<div class="gallery-details">
+							<div class="editContent">
+								<h5>王菲</h5>
+							</div>
+							<div class="editContent">
+								<p>我借来吹吹 却吹起人间烟火</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-item-wrapper nature outside">
+						<div class="gallery-item">
+							<div class="gallery-thumb">
+								<img src="static/images/singer_images/陈粒.jpg" class="img-responsive" alt="2nd gallery Thumb">
+								<div class="image-overlay"></div>
+								<a href="music_play/陈粒/61" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+								<a href="https://weibo.com/chen1ee" class="gallery-link"><i class="fa fa-link"></i></a>
+							</div>
+						</div>
+						<div class="gallery-details">
+							<div class="editContent">
+								<h5>陈粒</h5>
+							</div>
+							<div class="editContent">
+								<p>故人旧时容颜未沧桑</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-item-wrapper photography artwork">
+						<div class="gallery-item">
+							<div class="gallery-thumb">
+								<img src="static/images/singer_images/杨丞琳.jpg" class="img-responsive" alt="3rd gallery Thumb">
+								<div class="image-overlay"></div>
+								<a href="music_play/杨丞琳/71" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+								<a href="https://weibo.com/3511727907" class="gallery-link"><i class="fa fa-link"></i></a>
+							</div>
+						</div>
+						<div class="gallery-details">
+							<div class="editContent">
+								<h5>杨丞琳</h5>
+							</div>
+							<div class="editContent">
+								<p>过往值得了现在</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 gallery-item-wrapper creative nature">
+						<div class="gallery-item">
+							<div class="gallery-thumb">
+								<img src="static/images/singer_images/郭静.jpg" class="img-responsive" alt="4th gallery Thumb">
+								<div class="image-overlay"></div>
+								<a href="music_play/郭静/81" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+								<a href="https://weibo.com/clairekuo" class="gallery-link"><i class="fa fa-link"></i></a>
+							</div>
+						</div>
+						<div class="gallery-details">
+							<div class="editContent">
+								<h5>郭静</h5>
+							</div>
+							<div class="editContent">
+								<p>我的心去流浪 却带不走天堂</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 gallery-item-wrapper nature">
+						<div class="gallery-item">
+							<div class="gallery-thumb">
+								<img src="static/images/singer_images/张碧晨.jpg" class="img-responsive" alt="5th gallery Thumb">
+								<div class="image-overlay"></div>
+								<a href="music_play/张碧晨/91" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+								<a href="https://weibo.com/1677856077" class="gallery-link"><i class="fa fa-link"></i></a>
+							</div>
+						</div>
+						<div class="gallery-details">
+							<div class="editContent">
+								<h5>张碧晨</h5>
+							</div>
+							<div class="editContent">
+								<p>我们没有机会 为道别而伤悲</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--女歌手-->
+			</div>
+			<!--歌手信息-->
+		</div>
+		<!--滑动歌手页面布局-->
+	</div>
+	<!--CONTAINER-->
+
+	<!--所需要的js文件-->
+	<script src="static/js/jquery.js"></script>
+	<script src="static/js/bootstrap.min.js"></script>
+</body>
+</html>
