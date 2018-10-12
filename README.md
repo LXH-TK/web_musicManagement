@@ -21,5 +21,5 @@ Font Awesome 4.2.0 -> (http://fontawesome.io)
   [不能通过直接点击"home.html"打开文件]
 
 # 其他
-素材为编号1~10的'.jpg', '.txt'和'.mp3'文件，具体的文件爬取及命名见LXH-TK/crawler_neteaseMusic
+素材为编号1~100的'.jpg', '.txt'和'.mp3'文件，具体的文件爬取及命名见LXH-TK/crawler_neteaseMusic
   
