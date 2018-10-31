@@ -11,6 +11,7 @@ Animate.css 2013 -> (http://daneden.me/animate)
 Font Awesome 4.2.0 -> (http://fontawesome.io)
 
 # 项目运行/配置
+先补充素材文件，然后 ->->->
 方法一[推荐]：PyCharm打开项目，选择文件夹"DAM_HW2"，然后运行
   
 方法二[推荐]：要先将"DAM_HW2"文件夹拖到桌面上，然后终端：
