@@ -1,4 +1,4 @@
-# 开发环境
+# 环境
 语言: HTML5 + CSS + JavaScript + flask + python 2.7.10
   
 平台: PyCharm 2018.1.1 & Safari 12.0 @ MacOS 10.13.6
